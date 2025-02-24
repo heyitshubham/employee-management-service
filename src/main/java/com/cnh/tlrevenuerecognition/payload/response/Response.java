@@ -11,6 +11,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Response<T> {
     private Boolean success;
-    private int resCode;
+    private int status;
     private T data;
 }

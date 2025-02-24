@@ -43,7 +43,7 @@ public class AuthController {
                 .role(userDetails.getAuthorities().toString())
                 .username(userDetails.getUsername()).build();
         Response<JwtResponse> jwtRes = new Response<>();
-        jwtRes.setResCode(200);
+        jwtRes.setStatus(200);
         jwtRes.setSuccess(true);
         jwtRes.setData(res);
         return new ResponseEntity<>(jwtRes, HttpStatus.OK);

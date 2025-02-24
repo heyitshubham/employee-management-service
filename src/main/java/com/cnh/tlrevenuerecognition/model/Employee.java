@@ -40,7 +40,7 @@ public class Employee implements UserDetails {
     private String createdBy;
     private Date modifiedAt;
     @Column(length = 50)
-    private Date modifiedBy;
+    private String modifiedBy;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
